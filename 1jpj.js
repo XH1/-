@@ -1,10 +1,13 @@
 
-
+//step1
 var fileref=document.createElement('script');
 fileref.setAttribute("type","text/javascript");
 fileref.setAttribute("src", 'http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js');
 document.getElementsByTagName("head")[0].appendChild(fileref);
 
+
+
+//step2
 var courses = $(".dojoxGridContent .dojoxGridRowTable")
 courses.each((i,course) => {
     var c = course.children[0].children[0].children[3].children[0].getAttribute("href");
